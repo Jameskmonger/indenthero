@@ -22,3 +22,14 @@ test('it splits a string with 2 lines and indents each by 4 spaces', function (t
     ['i am also\na humble test case', '    i am also\n    a humble test case'],
     ['nothing is worse than\nunindented text!', '    nothing is worse than\n    unindented text!']
 ]);
+
+test('it splits a string with 3 lines and indents each by 4 spaces', function (t, input, expected) {
+    var safeExpected = expected.replace('\n', '\\n');
+    var safeResult = indent(input).replace('\n', '\\n');
+
+    t.assert.equal(safeExpected, safeResult);
+}, [
+    ['\n\n','    \n    \n    '],
+    ['a\nb\nc', '    a\n    b\n    c'],
+    ['james\nmonger\ngithub', '    james\n    monger\n    github']
+]);
