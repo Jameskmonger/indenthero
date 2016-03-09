@@ -8,10 +8,8 @@
   },
   "author": "James Monger <jameskmonger@hotmail.co.uk>",
   "license": "MIT",
-  "dependencies": {
-    "modunit": "^0.1.2"
-  },
   "devDependencies": {
-    "tap-diff": "^0.1.1"
+    "tap-diff": "^0.1.1",
+    "modunit": "^0.1.2"
   }
 }
