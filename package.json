@@ -1,6 +1,6 @@
 {
   "name": "indenthero",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Easily indent a block of text",
   "main": "index.js",
   "scripts": {
