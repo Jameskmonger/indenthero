@@ -2,7 +2,10 @@ var test = require('modunit');
 var indent = require('./index');
 
 test('it indents single line by 4 spaces', function (t, input, expected) {
-    t.assert.equal(expected, indent(input));
+    var safeExpected = expected.replace('\n', '\\n');
+    var safeResult = indent(input).replace('\n', '\\n');
+
+    t.assert.equal(safeExpected, safeResult);
 }, [
     ['', '    '],
     ['a great philosopher once said', '    a great philosopher once said'],
@@ -10,7 +13,10 @@ test('it indents single line by 4 spaces', function (t, input, expected) {
 ]);
 
 test('it splits a string with 2 lines and indents each by 4 spaces', function (t, input, expected) {
-    t.assert.equal(expected, indent(input));
+    var safeExpected = expected.replace('\n', '\\n');
+    var safeResult = indent(input).replace('\n', '\\n');
+
+    t.assert.equal(safeExpected, safeResult);
 }, [
     ['\n','    \n    '],
     ['i am also\na humble test case', '    i am also\n    a humble test case'],
