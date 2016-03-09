@@ -10,5 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "modunit": "^0.1.2"
+  },
+  "devDependencies": {
+    "tap-diff": "^0.1.1"
   }
 }
