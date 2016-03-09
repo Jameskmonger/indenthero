@@ -12,6 +12,10 @@ indenthero('i am a single line'); // '    i am a single line'
 indenthero('i am two\nlines of text'); //'    i am two\n    lines of text'
 ```
 
+## Installation
+
+    npm install indenthero --save
+
 ## License
 
 [MIT](/LICENSE)
