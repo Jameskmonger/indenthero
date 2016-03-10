@@ -14,5 +14,8 @@
   },
   "files": [
     "index.js"
-  ]
+  ],
+  "dependencies": {
+    "splitkeep": "^1.0.0"
+  }
 }
