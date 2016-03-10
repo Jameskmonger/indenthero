@@ -6,6 +6,14 @@
   "scripts": {
     "test": "node test.js | node_modules/.bin/tap-diff"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jameskmonger/indenthero.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jameskmonger/indenthero/issues"
+  },
+  "homepage": "https://github.com/jameskmonger/indenthero#readme",
   "author": "James Monger <jameskmonger@hotmail.co.uk>",
   "license": "MIT",
   "devDependencies": {
