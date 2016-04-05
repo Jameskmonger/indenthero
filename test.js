@@ -45,7 +45,10 @@ test('it indents single line by the specified space count', function (t, input, 
     ['build that wall!', '    build that wall!', 4],
     ['', '  ', 2],
     ['a great philosopher once said', '  a great philosopher once said', 2],
-    ['build that wall!', '  build that wall!', 2]
+    ['build that wall!', '  build that wall!', 2],
+    ['', ' ', 1],
+    ['a great philosopher once said', ' a great philosopher once said', 1],
+    ['build that wall!', ' build that wall!', 1]
 ]);
 
 test('it splits a string with 2 lines and indents each by the specified space count', function (t, input, expected, count) {
