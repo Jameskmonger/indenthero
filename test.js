@@ -79,5 +79,8 @@ test('it splits a string with 3 lines and indents each by the specified space co
     ['james\nmonger\ngithub', '    james\n    monger\n    github', 4],
     ['\n\n','  \n  \n  ', 2],
     ['a\nb\nc', '  a\n  b\n  c', 2],
-    ['james\nmonger\ngithub', '  james\n  monger\n  github', 2]
+    ['james\nmonger\ngithub', '  james\n  monger\n  github', 2],
+    ['\n\n',' \n \n ', 1],
+    ['a\nb\nc', ' a\n b\n c', 1],
+    ['james\nmonger\ngithub', ' james\n monger\n github', 1]
 ]);
