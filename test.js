@@ -62,7 +62,10 @@ test('it splits a string with 2 lines and indents each by the specified space co
     ['nothing is worse than\nunindented text!', '    nothing is worse than\n    unindented text!', 4],
     ['\n','  \n  ', 2],
     ['i am also\na humble test case', '  i am also\n  a humble test case', 2],
-    ['nothing is worse than\nunindented text!', '  nothing is worse than\n  unindented text!', 2]
+    ['nothing is worse than\nunindented text!', '  nothing is worse than\n  unindented text!', 2],
+    ['\n',' \n ', 1],
+    ['i am also\na humble test case', ' i am also\n a humble test case', 1],
+    ['nothing is worse than\nunindented text!', ' nothing is worse than\n unindented text!', 1]
 ]);
 
 test('it splits a string with 3 lines and indents each by the specified space count', function (t, input, expected, count) {
