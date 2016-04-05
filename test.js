@@ -1,7 +1,7 @@
 var test = require('modunit');
 var indent = require('./index');
 
-test('it indents single line by 4 spaces', function (t, input, expected) {
+test('it indents single line by 4 spaces if no space count is specified', function (t, input, expected) {
     var safeExpected = expected.replace('\n', '\\n');
     var safeResult = indent(input).replace('\n', '\\n');
 
@@ -12,7 +12,7 @@ test('it indents single line by 4 spaces', function (t, input, expected) {
     ['build that wall!', '    build that wall!']
 ]);
 
-test('it splits a string with 2 lines and indents each by 4 spaces', function (t, input, expected) {
+test('it splits a string with 2 lines and indents each by 4 spaces if no space count is specified', function (t, input, expected) {
     var safeExpected = expected.replace('\n', '\\n');
     var safeResult = indent(input).replace('\n', '\\n');
 
@@ -23,7 +23,7 @@ test('it splits a string with 2 lines and indents each by 4 spaces', function (t
     ['nothing is worse than\nunindented text!', '    nothing is worse than\n    unindented text!']
 ]);
 
-test('it splits a string with 3 lines and indents each by 4 spaces', function (t, input, expected) {
+test('it splits a string with 3 lines and indents each by 4 spaces if no space count is specified', function (t, input, expected) {
     var safeExpected = expected.replace('\n', '\\n');
     var safeResult = indent(input).replace('\n', '\\n');
 
